@@ -25,7 +25,7 @@ const Header = () => {
                     <a href="/Cardapio">Cardápio</a>
                 </li>
             </ul>
-            <div >
+            <div>
                 <a className="text-[#3B2416] p-4 bg-[#C7794A] rounded-md hover:bg-[#b1693f] hover:text-[#50321f]" href="/franquia">Seja um Franqueado</a>
             </div>
         </nav>
