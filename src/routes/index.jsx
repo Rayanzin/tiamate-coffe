@@ -2,6 +2,11 @@ import { BrowserRouter, Route, Routes } from "react-router";
 import Home from "../pages/Home";
 import NotFound from "../pages/NotFound";
 import Default from "../layouts/Default";
+import NossoCafe from "../pages/NossoCafe";
+import Noticias from "../pages/noticias";
+import Contato from "../pages/Contato";
+import Cardapio from "../pages/Cardapio";
+import Franquia from "../pages/Franquia";
 
 const Patchs = () => {
     return (
@@ -10,7 +15,11 @@ const Patchs = () => {
                 <Routes>
                     <Route path="/" element={<Default />} >
                         <Route index element={<Home/>} />
-
+                        <Route path="/NossoCafe" element={<NossoCafe/>}/>
+                        <Route path="/Noticias" element={<Noticias/>}/>
+                        <Route path="/Contato" element={<Contato/>}/>
+                        <Route path="/Cardapio" element={<Cardapio/>}/>
+                        <Route path="/Franquia" element={<Franquia/>}/>
                     </Route>
 
                     <Route path="*" element={<NotFound />} />

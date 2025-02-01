@@ -2,8 +2,8 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <nav className="text-[#F5E7DA] no-underline flex items-center bg-[#292625] py-6 gap-60 justify-center">
-            <ul className="list-none flex gap-12 items-center ">
+        <nav className="text-letras no-underline flex items-center bg-secundaria py-[30px] gap-[220px] justify-center">
+            <ul className="list-none flex gap-[45px] items-center ">
                 <li className='w-36 h-12'>
                     <a  href="/">
                         <img className='w-full h-full' src="./src/imgs/logo-tiamate.png" alt="Logo" />
@@ -26,7 +26,7 @@ const Header = () => {
                 </li>
             </ul>
             <div>
-                <a className="text-[#3B2416] p-4 bg-[#C7794A] rounded-md hover:bg-[#b1693f] hover:text-[#50321f]" href="/franquia">Seja um Franqueado</a>
+                <a className="text-letras2 py-[16px] px-[23px] bg-quaternaria rounded-md hover:bg-bghover hover:text-l2hover" href="/franquia">Seja um Franqueado</a>
             </div>
         </nav>
     );
