@@ -1,7 +1,9 @@
+import Franquia from "../components/Franquia";
+
 const Cardapio = () => {
     return (
         <>
-        
+            <Franquia/>
         </>
     );
 }

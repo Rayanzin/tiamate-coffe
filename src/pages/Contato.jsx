@@ -1,7 +1,6 @@
 const Contato = () => {
     return (
         <>
-        
         </>
     );
 }

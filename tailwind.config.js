@@ -12,8 +12,9 @@ export default {
         quaternaria: '#C7794A',
         letras: '#F5E7DA',
         letras2: '#3B2416',
+        letras3: '#CF9A5A',
         bghover: '#b1693f',
-        l2hover: '#50321f'
+        l2hover: '#50321f',
       }
     },
   },
