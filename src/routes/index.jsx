@@ -6,7 +6,6 @@ import NossoCafe from "../pages/NossoCafe";
 import Noticias from "../pages/noticias";
 import Contato from "../pages/Contato";
 import Cardapio from "../pages/Cardapio";
-import Franquia from "../pages/Franquia";
 
 const Patchs = () => {
     return (
@@ -19,7 +18,6 @@ const Patchs = () => {
                         <Route path="/Noticias" element={<Noticias/>}/>
                         <Route path="/Contato" element={<Contato/>}/>
                         <Route path="/Cardapio" element={<Cardapio/>}/>
-                        <Route path="/Franquia" element={<Franquia/>}/>
                     </Route>
 
                     <Route path="*" element={<NotFound />} />

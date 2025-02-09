@@ -1,9 +1,9 @@
-import Header from "../components/Header";
+import Franquia from "../components/Franquia";
 
 const Home = () => {
     return ( 
         <>
-            <h1>Olá</h1>
+            <Franquia/>
         </>
      );
 }

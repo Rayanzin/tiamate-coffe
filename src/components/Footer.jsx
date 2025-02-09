@@ -25,11 +25,11 @@ const Footer = () => {
                         <a href="/Cardapio">Cardápio</a>
                     </li>
                     <li >
-                        <a href="/franquia">Franquia</a>
+                        <a href="#Franquia">Franquia</a>
                     </li>
                 </ul>
             </nav>
-            <div className="flex py-[40px] gap-[495px]">
+            <div className="flex py-[40px] gap-[540px]">
                 <ul className="flex gap-[24px] items-center">
                     <li>
                         <p className="text-[14px]">Curta e <br /> Compartilhe</p>
