@@ -51,7 +51,7 @@ const Franquia = () => {
                             placeholder='Telefone com DDD'
                             required />
                         <div className='flex gap-[10px]'>
-                            <Select className='text-[16px] *:*:bg-letras *:*:rounded *:*:h-[62px] *:*:pl-[10px] *:*:w-[35px] *:*:mx-[-10px] h-[64px] *:*:*:*:focus:border-letras' placeholder="UF" required>
+                            <Select dropdownStyle={{backgroundColor: "#F5E7DA"}} className='text-[16px] *:*:bg-letras *:*:rounded *:*:h-[62px] *:*:pl-[10px] *:*:w-[35px] *:*:mx-[-10px] h-[64px] *:*:*:*:focus:border-letras' placeholder="UF" required>
                                 {estados.map(estado => (
                                     <Select.Option key={estado.id} value={estado.sigla}>
                                         {estado.sigla}
@@ -60,7 +60,7 @@ const Franquia = () => {
                             </Select>
                             <Input className='text-[16px] bg-letras py-[18px] hover:border-letras focus:border-letras' placeholder='Cidade' required />
                         </div>
-                        <Select className='text-[16px] *:*:bg-letras *:*:rounded *:*:h-[58px] *:*:pl-[10px] *:*:w-[35px] *:*:mx-[-10px] h-[60px]' placeholder="Como conheceu a Tiamate?">
+                        <Select dropdownStyle={{backgroundColor: "#F5E7DA"}} className='text-[16px] *:*:bg-letras *:*:rounded *:*:h-[58px] *:*:pl-[10px] *:*:w-[35px] *:*:mx-[-10px] h-[60px]' placeholder="Como conheceu a Tiamate?">
                             <Select.Option value="internet">Internet</Select.Option>
                             <Select.Option value="Amigos">Amigos</Select.Option>
                             <Select.Option value="Familiares">Familiares</Select.Option>
