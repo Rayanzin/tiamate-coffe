@@ -33,7 +33,7 @@ const Franquia = () => {
             })
     }, []);
     return (
-        <section id="Franquia" className="flex justify-center bg-letras2 pl-[69px] h-[700px]">
+        <section id="Franquia" className="flex justify-center bg-letras2 pl-[69px] h-[700px] ">
             <div className="p-[69px] flex flex-col justify-center">
                 <div className="w-[468px] *:text-letras3 mb-[20px]">
                     <p className="text-[18px]">Entre em contato</p>

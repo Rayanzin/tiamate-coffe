@@ -15,6 +15,7 @@ export default {
         letras3: '#CF9A5A',
         bghover: '#b1693f',
         l2hover: '#50321f',
+        bgcard: "#E7E1DF",
       }
     },
   },
