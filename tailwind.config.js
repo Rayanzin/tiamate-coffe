@@ -16,6 +16,7 @@ export default {
         bghover: '#b1693f',
         l2hover: '#50321f',
         bgcard: "#E7E1DF",
+        textheader:"#F7AE1A",
       }
     },
   },

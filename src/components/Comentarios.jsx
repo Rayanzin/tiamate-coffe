@@ -10,6 +10,8 @@ const settings = {
     slidesToShow: 2.5, // Número de cards visíveis por vez
     slidesToScroll: 1, // Número de slides que movem de cada vez
     arrows: false, // Remove os botões de seta
+    draggable: true, // Permite arrastar livremente os slides
+    swipeToSlide: true, // Permite deslizar diretamente para qualquer posição
     responsive: [
         {
             breakpoint: 1024, // Para telas de 1024px ou menores (como tablets)
@@ -61,16 +63,16 @@ const Comentarios = () => {
     ];
 
     return (
-        <section className="my-[130px] flex flex-col items-center">
+        <section className="py-[130px] flex flex-col items-center">
             <div className="text-center">
                 <p className="text-letras2 text-[18px]">Depoimentos</p>
                 <h2 className="text-primaria text-[50px] mb-[40px]">Tudo sobre Tiamate Coffee</h2>
             </div>
-            <div className="relative ml-[240px]">
-                <div className="w-[505px] h-[419px]  z-0 absolute top-[-30px] left-[-330px]">
-                    <img className="w-full h-full object-cover object-top" src="./src/imgs/coments.png" alt="atendente" />
+            <div className="relative">
+                <div className="w-[505px] h-[420px]  z-0 absolute top-[-30px] left-[-340px]">
+                    <img className="w-full h-full object-cover object-right-top" src="./src/imgs/coments.png" alt="atendente" />
                 </div>
-                <Slider className="carrosel z-10 cursor-pointer active:cursor-grabbing" {...settings}>
+                <Slider className="w-[1100px] carrosel z-10 cursor-pointer active:cursor-grabbing mr-[-340px]" {...settings}>
                     {comentarios.map((comentario, index) => (
                         <div key={index} className="flex justify-center">
                             <CardComents
