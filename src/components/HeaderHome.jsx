@@ -1,4 +1,5 @@
 import HeaderModular from "./HeaderModular";
+import RedesSociais from "./RedesSociais";
 
 const HeaderHome = () => {
     return (
@@ -6,6 +7,7 @@ const HeaderHome = () => {
             imagem="./src/imgs/header-home.jpeg"
             textoMarcado="Um café quentinho"
             texto=" aqui na Tiamate muda o dia."
+            redes={(<RedesSociais/>)}
         />
     );
 }
