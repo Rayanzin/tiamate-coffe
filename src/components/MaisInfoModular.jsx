@@ -2,7 +2,7 @@ import Button from "./Button";
 
 const MaisInfoModular = ({imagem, titulo}) => {
     return (
-        <section className="w-full h-[500px] relative">
+        <section className="w-full h-[500px] relative ">
             <div className="w-[full] h-full relative">
                 <img className="w-full h-full " src={imagem} alt="info1" />
             </div>

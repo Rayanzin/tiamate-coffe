@@ -3,7 +3,6 @@ import ModeloModular from "./ModeloModular";
 const ModeloToGo = () => {
     return (
         <ModeloModular
-            className="text-[42px]"
             Titulo={` Tiamate Coffee To Go`}
             Espaço={` 8 a 12`}
             Faturamento={` 25`}

@@ -4,7 +4,7 @@ const ModeloModular = ({ className="", Titulo, Espaço, Faturamento, Royaltyes, 
             <div>
                 <div>
                     <p className="text-[18px] text-letras2 mb-[-20px] font-normal">Cafeteria</p>
-                    <h2 className={`w-[480px] text-[55px] text-primaria font-bold ${className}`}>{Titulo}</h2>
+                    <h2 className={`w-[480px] text-[42px] text-primaria font-bold ${className}`}>{Titulo}</h2>
                 </div>
                 <div>
                     <ul className="flex flex-col gap-[25px] *:flex *:gap-[22px] *:items-center">
