@@ -3,6 +3,7 @@ import ModeloModular from "./ModeloModular";
 const ModeloToGo = () => {
     return (
         <ModeloModular
+            id={`togo`}
             Titulo={` Tiamate Coffee To Go`}
             Espaço={` 8 a 12`}
             Faturamento={` 25`}

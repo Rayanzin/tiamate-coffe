@@ -1,6 +1,6 @@
-const ModeloModular = ({ className="", Titulo, Espaço, Faturamento, Royaltyes, Investimento, imgPrincipal, img1, img2, img3, img4, img5 }) => {
+const ModeloModular = ({ className="", id,  Titulo, Espaço, Faturamento, Royaltyes, Investimento, imgPrincipal, img1, img2, img3, img4, img5 }) => {
     return (
-        <section className="flex justify-center px-[135px] pt-[130px] pb-[86px] gap-[20px]">
+        <section id={id} className="flex justify-center px-[135px] pt-[130px] pb-[86px] gap-[20px]">
             <div>
                 <div>
                     <p className="text-[18px] text-letras2 mb-[-20px] font-normal">Cafeteria</p>

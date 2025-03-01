@@ -3,6 +3,7 @@ import ModeloModular from "./ModeloModular";
 const ModeloCoffe = () => {
     return (
         <ModeloModular
+            id={`coffe`}
             className="text-[55px]"
             Titulo={`Tiamate Coffee`}
             Espaço={`30 a 40`}

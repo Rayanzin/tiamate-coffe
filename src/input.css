@@ -13,3 +13,6 @@ html{
     scrollbar-width: none;
     background-color:#3B2416;
 }
+.escolhas:hover .item:not(:hover){
+    filter: blur(5px);
+}
