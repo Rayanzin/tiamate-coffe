@@ -28,11 +28,11 @@ const VideoModular = ({ className = "", video, img }) => {
         ></iframe>
         <button
           id="botao"
-          className="absolute z-10 flex flex-col gap-[22px]"
+          className="absolute z-10 flex flex-col gap-[22px]  "
           onClick={startVideo}
         >
           <svg
-            className="*:hover:fill-letras2 *:duration-200"
+            className="*:hover:fill-letras2 *:duration-200 duration-300 shadow-2xl active:shadow-primaria rounded-2xl"
             width="166"
             height="113"
             viewBox="0 0 166 113"
