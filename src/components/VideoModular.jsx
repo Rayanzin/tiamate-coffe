@@ -1,12 +1,12 @@
-const VideoModular = ({ className = "", video, img }) => {
+const VideoModular = ({ className = "", divVideo = "", video, img }) => {
   function startVideo() {
     let iframe = document.getElementById("youtube-iframe");
     let iframeSrc = iframe.src; // Captura o src atual do iframe
     iframe.src = iframeSrc + "&autoplay=1"; // Adiciona o parâmetro autoplay=1 para iniciar o vídeo
     let tempoDeAtraso = 1500;
-    let botao = document.getElementById("botao")
-    let imagemvideo = document.getElementById("imagemvideo")
-    let overlay = document.getElementById("overlay")
+    let botao = document.getElementById("botao");
+    let imagemvideo = document.getElementById("imagemvideo");
+    let overlay = document.getElementById("overlay");
     setTimeout(() => {
       botao.style.display = "none";
       imagemvideo.style.display = "none";
@@ -14,8 +14,12 @@ const VideoModular = ({ className = "", video, img }) => {
     }, tempoDeAtraso);
   }
   return (
-    <section className={`relative w-full h-[500px] bg-primaria ${className}`}>
-      <div className=" w-full h-full flex justify-center items-center">
+    <section
+      className={`w-full h-[500px] mb-[135px] mt-[83px] bg-white ${className}`}
+    >
+      <div
+        className={`relative w-full h-full flex justify-center items-center ${divVideo}`}
+      >
         <iframe
           id="youtube-iframe"
           className="relative w-full h-full"
@@ -46,14 +50,17 @@ const VideoModular = ({ className = "", video, img }) => {
           </svg>
           <p className="text-[18px] text-letras">Assistir Vídeo</p>
         </button>
+        <div
+          id="imagemvideo"
+          className={`top-0 left-0 !w-full h-full absolute `}
+        >
+          <img className="w-full h-full" src={img} alt="imagem do video" />
+        </div>
+        <div
+          id="overlay"
+          className={`top-0 left-0 bg-[#0000009c] !w-full h-full absolute `}
+        ></div>
       </div>
-      <div id="imagemvideo" className="top-0 left-0 w-full h-full absolute">
-        <img className="w-full h-full" src={img} alt="imagem do video" />
-      </div>
-      <div
-        id="overlay"
-        className="top-0 left-0 bg-[#0000009c] w-full h-full absolute"
-      ></div>
     </section>
   );
 };

@@ -1,3 +1,4 @@
+import DepoimentosFranquiados from "../components/DepoimentosFranquiados";
 import Diferenciais from "../components/Diferenciais";
 import Escolha from "../components/Escolha";
 import Franquia from "../components/Franquia";
@@ -21,7 +22,7 @@ const Noticias = () => {
       <MaisInfoUm/>
       <Diferenciais/>
       <MaisInfoDois/>
-
+      <DepoimentosFranquiados/>
       
       <Franquia />
     </main>

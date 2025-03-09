@@ -1,4 +1,4 @@
-import Button from "./Button";
+import Button from "./ButtonModular";
 
 const MaisInfoModular = ({imagem, titulo}) => {
     return (
