@@ -1,8 +1,8 @@
 import { Button } from "antd";
-const Botao = ({ className = "", buttonName, link }) => {
+const ButtonModular = ({ className = "", buttonName, link, type }) => {
   return (
     <Button
-      type="primary"
+      type={type}
       href={link}
       className={`w-[570px] h-[60px] !bg-quaternaria text-[16px] text-letras2 ${className}`}
     >
@@ -11,4 +11,4 @@ const Botao = ({ className = "", buttonName, link }) => {
   );
 };
 
-export default Botao;
+export default ButtonModular;

@@ -7,6 +7,7 @@ import MaisInfoDois from "../components/MaisInfoDois";
 import MaisInfoUm from "../components/MaisInfoUm";
 import ModeloCoffe from "../components/ModeloCoffe";
 import ModeloToGo from "../components/ModeloToGo";
+import NoticiaCompleta from "../components/NoticiaCompleta";
 import QuemSomos from "../components/QuemSomos";
 import VideoFranqueado from "../components/VideoFranqueado";
 
@@ -23,7 +24,7 @@ const Noticias = () => {
       <Diferenciais/>
       <MaisInfoDois/>
       <DepoimentosFranquiados/>
-      
+      <NoticiaCompleta/>
       <Franquia />
     </main>
   );
