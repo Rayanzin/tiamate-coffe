@@ -31,21 +31,21 @@ const NoticiaCompleta = () => {
     {
       img: "./src/imgs/noticia-tiamatte-1.jpg",
       titulo: "Conheça cinco lugares no centro para ir com os amigos",
-      link: "#",
+      href: "#noticiacompleta",
     },
     {
       img: "./src/imgs/noticia-tiamatte-2.jpg",
       titulo: "Um gostinho moderno no coração de Fortaleza",
-      link: "#",
+      href: "#noticiacompleta",
     },
     {
       img: "./src/imgs/noticia-tiamatte-3.jpg",
       titulo: "Cafeteria é nova tendência de negócio em Salvador",
-      link: "#",
+      href: "#noticiacompleta",
     },
   ];
   return (
-    <section className="flex flex-col gap-[30px] w-[1440px] m-auto px-[135px] mt-[117px] mb-[190px] ">
+    <section id="noticiacompleta" className="flex flex-col gap-[30px] w-[1440px] m-auto px-[135px] mt-[117px] mb-[190px] ">
       <div>
         <p className="text-[18px] font-normal">Fique por dento</p>
         <h2 className="text-[50px] font-bold text-primaria">Tiamate na Mídia</h2>
@@ -60,7 +60,7 @@ const NoticiaCompleta = () => {
               <NoticiaCompletaModular
                 img={noticia.img}
                 titulo={noticia.titulo}
-                link={`#`}
+                href={noticia.href}
               />
             </li>
           ))}
