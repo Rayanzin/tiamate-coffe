@@ -9,20 +9,20 @@ const Header = () => {
                         <img className='w-full h-full' src="./src/imgs/logo-tiamate.png" alt="Logo" />
                     </a>
                 </li>
-                <li className='hover:mb-1 duration-75'>
-                    <a href="/">Inicio</a>
+                <li className='hover:mb-2 duration-100'>
+                    <a className='py-[6px]' href="/">Inicio</a>
                 </li>
-                <li className='hover:mb-1 duration-75'>
-                    <a href="/NossoCafe">Nosso Café</a>
+                <li className=' hover:mb-2 py-[6px] duration-100'>
+                    <a className='py-[6px]' href="/NossoCafe">Nosso Café</a>
                 </li>
-                <li className='hover:mb-1 duration-75'>
-                    <a href="/Noticias">Notícias</a>
+                <li className=' hover:mb-2 py-[6px] duration-100'>
+                    <a className='py-[6px]' href="/Noticias">Notícias</a>
                 </li>
-                <li className='hover:mb-1 duration-75'>
-                    <a href="/Contato">Contato</a>
+                <li className=' hover:mb-2 py-[6px] duration-100'>
+                    <a className='py-[6px]' href="/Contato">Contato</a>
                 </li>
-                <li className='hover:mb-1 duration-75'>
-                    <a href="/Cardapio">Cardápio</a>
+                <li className=' hover:mb-2 py-[6px] duration-100'>
+                    <a className='py-[6px]' href="/Cardapio">Cardápio</a>
                 </li>
             </ul>
             <div>

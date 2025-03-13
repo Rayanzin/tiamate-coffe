@@ -3,7 +3,11 @@ import VideoModular from "./VideoModular";
 const VideoHome = () => {
   return (
     <>
-      <h2 className="font-bold text-[50px] text-primaria ml-[138px] leading-[100%]">Coisas boas acontecem àqueles <br /> que gostam de café</h2>
+      <div className="w-[1167px] m-auto">
+        <h2 className="text-start font-bold text-[50px] text-primaria leading-[100%]">
+          Coisas boas acontecem àqueles <br /> que gostam de café
+        </h2>
+      </div>
       <VideoModular
         className="h-[600px]"
         divVideo="!w-[1168px] m-auto shadow-xl shadow-[#00000030]"

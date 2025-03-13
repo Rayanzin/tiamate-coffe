@@ -1,4 +1,6 @@
+import Ambiente from "../components/ambiente";
 import BoasVindas from "../components/BoasVindas";
+import CardapioHome from "../components/CardapioHome";
 import Comentarios from "../components/Comentarios";
 import Franquia from "../components/Franquia";
 import HeaderHome from "../components/HeaderHome";
@@ -8,12 +10,14 @@ import VideoHome from "../components/VideoHome";
 
 const Home = () => {
     return (
-        <main className="max-w-[1440px] m-auto bg-white">
+        <main className="max-w-[1920px] m-auto bg-white">
             <HeaderHome />
             <BoasVindas/>
             <Missoes/>
             <VideoHome/>
             <HeaderHomeDois/>
+            <Ambiente/>
+            <CardapioHome/>
             <Franquia />
             <Comentarios />
         </main>
