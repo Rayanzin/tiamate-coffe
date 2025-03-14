@@ -1,6 +1,6 @@
 const Ambiente = () => {
   return (
-    <section className="flex items-center flex-col w-full h-[100vh] px-[135px] pt-[169px] gap-[58px] mb-[40px]">
+    <section className="flex items-center flex-col w-full h-[900px] px-[135px] pt-[169px] gap-[58px] mb-[40px]">
       <div>
         <p className="text-[18px] font-normal text-letras2">
           Para você e seus amigos
