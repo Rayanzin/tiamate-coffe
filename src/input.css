@@ -16,3 +16,13 @@ html{
 .escolhas:hover .item:not(:hover){
     filter: blur(5px);
 }
+
+.categoriaon{
+    font-size: 24px;
+    font-weight: 700;
+    color: #C7794A;
+}
+.spanon{
+    width: 30px;
+    background-color: #C7794A;
+}

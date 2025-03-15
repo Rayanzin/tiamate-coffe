@@ -3,7 +3,7 @@ import RedesSociais from "./RedesSociais"
 const HeaderCardapio = () => {
     return (
         <HeaderModular
-            className="w-[450px]"
+        classH2="w-[460px]"
             imagem={`./src/imgs/header-cardapio.jpeg`}
             texto={`O verdadeiro sabor do Café.`}
             redes={(<RedesSociais />)}

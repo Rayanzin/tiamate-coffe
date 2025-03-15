@@ -4,7 +4,8 @@ import RedesSociais from "./RedesSociais";
 const HeaderNoticias = () => {
     return (
         <HeaderModular
-            className="top-[152px] ml-[720px]"
+            className="flex justify-end !items-end"
+            classH2="!w-[480px]"
             imagem="./src/imgs/header-noticia.jpeg"
             texto="Abra sua Franquia Tiamate Coffee."
             redes={(<RedesSociais />)}
