@@ -1,10 +1,11 @@
 import HeaderModular from "./HeaderModular";
 import RedesSociais from "./RedesSociais";
+import img from "../imgs/header-nossocafe.jpeg"
 
 const HeaderNossoCafe = () => {
     return ( 
         <HeaderModular
-            imagem="./src/imgs/header-nossocafe.jpeg"
+            imagem={img}
             texto="Mais que sabor, sentimentos!"
             redes={(<RedesSociais/>)}
         />

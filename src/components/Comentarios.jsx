@@ -1,6 +1,11 @@
 import CardComents from "./CardComents";
 // import React from 'react';
 import Slider from "react-slick";
+import img1 from "../imgs/kalil-sousa.jpeg"
+import img2 from "../imgs/maria-oliveira.jpeg"
+import img3 from "../imgs/joao-silva.webp"
+import img4 from "../imgs/ana-paula-costa.jpeg"
+import img5 from "../imgs/luciana-mendes.jpg"
 
 // Configuração do carrossel
 const settings = {
@@ -33,31 +38,31 @@ const Comentarios = () => {
         {
             Nota: "5",
             Comentario: "O café é realmente bom, e os salgados também (pedi um croissant de 4 queijos). Já havia pedido antes via iFood mas resolvi fazer uma visita enquanto andava pelo Centro, o café fica mesmo ao lado da Praça do Ferreira. Vale a pena dar uma visitada quando quiser se refrescar com um café gelado deles ou tomar um café da manhã por lá.",
-            Imagem: "./src/imgs/kalil-sousa.jpeg",
+            Imagem: img1,
             Nome: "Kalil Sousa",
         },
         {
             Nota: "5",
             Comentario: "A experiência foi maravilhosa! O café estava perfeito e o ambiente é super agradável. Comi um pão de queijo e foi uma delícia. Vou voltar mais vezes!",
-            Imagem: "./src/imgs/maria-oliveira.jpeg",
+            Imagem: img2,
             Nome: "Maria Oliveira",
         },
         {
             Nota: "4",
             Comentario: "O café é bom, mas o atendimento poderia ser mais rápido. Mesmo assim, adorei o sabor e a atmosfera do lugar. Vale a pena visitar!",
-            Imagem: "./src/imgs/joao-silva.webp",
+            Imagem: img3,
             Nome: "João Silva",
         },
         {
             Nota: "5",
             Comentario: "Simplesmente o melhor café que já tomei! Amei o ambiente e a simpatia dos funcionários. Super recomendo!",
-            Imagem: "./src/imgs/ana-paula-costa.jpeg",
+            Imagem: img4,
             Nome: "Ana Paula Costa",
         },
         {
             Nota: "5",
             Comentario: "Excelente! O café gelado estava uma delícia e a torta de maçã estava incrível. Um lugar perfeito para um café da manhã tranquilo.",
-            Imagem: "./src/imgs/luciana-mendes.jpg",
+            Imagem: img5,
             Nome: "Luciana Mendes",
         },
     ];

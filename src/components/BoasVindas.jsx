@@ -1,3 +1,4 @@
+import img from "../imgs/sundae.png"
 const BoasVindas = () => {
   return (
     <section className="w-full flex justify-center bg-bgcard">
@@ -5,7 +6,7 @@ const BoasVindas = () => {
         <div className="w-[56%] h-[700px] ">
           <img
             className="w-full h-full object-cover object-[0%_0%]"
-            src="./src/imgs/sundae.png"
+            src={img}
             alt="sundaes"
           />
         </div>

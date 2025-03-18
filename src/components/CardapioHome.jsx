@@ -1,6 +1,13 @@
 import Slider from "react-slick";
 import ButtonModular from "./ButtonModular";
-
+import img1 from "../imgs/coffe-cookie.png"
+import img2 from "../imgs/cream-morango.png"
+import img3 from "../imgs/coffe-tradicional.png"
+import img4 from "../imgs/coffe-brigadeiro.png"
+import img5 from "../imgs/coffe-caramelo.png"
+import img6 from "../imgs/cream-baunilha.png"
+import img7 from "../imgs/cream-chocolate.png"
+import img8 from "../imgs/cream-churros.png"
 const CardapioHome = () => {
   const settings = {
     dots: true, // Exibe os pontos de navegação
@@ -31,28 +38,28 @@ const CardapioHome = () => {
 
   const bebidas = [
     {
-      img: "./src/imgs/coffe-cookie.png",
+      img: img1
     },
     {
-      img: "./src/imgs/cream-morango.png",
+      img: img2
     },
     {
-      img: "./src/imgs/coffe-tradicional.png",
+      img: img3
     },
     {
-      img: "./src/imgs/coffe-brigadeiro.png",
+      img: img4
     },
     {
-      img: "./src/imgs/coffe-caramelo.png",
+      img: img5
     },
     {
-      img: "./src/imgs/cream-baunilha.png",
+      img: img6
     },
     {
-      img: "./src/imgs/cream-chocolate.png",
+      img: img7
     },
     {
-      img: "./src/imgs/cream-churros.png",
+      img: img8
     },
   ];
 

@@ -1,5 +1,6 @@
 import { Form, Select, Input, Button } from 'antd';
 import { useEffect, useState } from 'react';
+import img from "../imgs/fundo.jpg"
 const Franquia = () => {
     const [telefone, setTelefone] = useState('');
 
@@ -72,7 +73,7 @@ const Franquia = () => {
                 </Form>
             </div>
             <div className="w-[667px] h-[100%]">
-                <img className='object-cover w-[100%] h-[100%]' src="./src/imgs/fundo.jpg" alt="fundo" />
+                <img className='object-cover w-[100%] h-[100%]' src={img} alt="fundo" />
             </div>
         </section>
     );
