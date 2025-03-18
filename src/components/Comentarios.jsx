@@ -1,6 +1,7 @@
 import CardComents from "./CardComents";
 // import React from 'react';
 import Slider from "react-slick";
+import img from "../imgs/coments.png"
 import img1 from "../imgs/kalil-sousa.jpeg"
 import img2 from "../imgs/maria-oliveira.jpeg"
 import img3 from "../imgs/joao-silva.webp"
@@ -75,7 +76,7 @@ const Comentarios = () => {
             </div>
             <div className="relative">
                 <div className="w-[505px] h-[420px]  z-0 absolute top-[-30px] left-[-340px]">
-                    <img className="w-full h-full object-cover object-right-top" src="./src/imgs/coments.png" alt="atendente" />
+                    <img className="w-full h-full object-cover object-right-top" src={img} alt="atendente" />
                 </div>
                 <Slider className="w-[1100px] carrosel z-10 cursor-pointer active:cursor-grabbing mr-[-340px]" {...settings}>
                     {comentarios.map((comentario, index) => (
