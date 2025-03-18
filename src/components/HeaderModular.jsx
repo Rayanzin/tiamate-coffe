@@ -8,7 +8,7 @@ const HeaderModular = ({
   textoMarcadoDois,
   textoDois,
 }) => {
-    
+
   return (
     <section className="relative m-auto w-full h-[490px]">
       <div className="absolute z-0 w-full h-full">

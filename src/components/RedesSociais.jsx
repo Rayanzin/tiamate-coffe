@@ -1,6 +1,6 @@
-const RedesSociais = ({className = "",}) => {
+const RedesSociais = ({className = "", classUl = ""}) => {
     return (
-        <ul className="flex gap-[29px] items-center">
+        <ul className={`flex gap-[29px] items-center ${classUl}`}>
             <li className="hover:mt-[-5px] duration-75 ease-in-out">
                 <a  href="https://www.facebook.com/tiamatecoffee?locale=pt_BR" target="_blank">
                     <svg className={`${className}`} width="33" height="33" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">

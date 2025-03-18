@@ -4,7 +4,7 @@ const ButtonModular = ({ className = "", buttonName, link, type }) => {
     <Button
       type={type}
       href={link}
-      className={`w-[570px] h-[60px] !bg-quaternaria text-[16px] text-letras2 ${className}`}
+      className={`w-[570px] h-[60px] bg-quaternaria hover:!bg-bghover text-[16px] text-letras2 ${className}`}
     >
       {buttonName}
     </Button>

@@ -26,7 +26,7 @@ const Header = () => {
                 </li>
             </ul>
             <div>
-                <a className="text-letras2 py-[16px] px-[23px] bg-quaternaria rounded-md hover:bg-bghover hover:text-l2hover" href="#Franquia">Seja um Franqueado</a>
+                <a className="text-letras2 py-[16px] px-[23px] bg-quaternaria rounded-md hover:bg-bghover hover:text-l2hover cursor-pointer" href="/noticias">Seja um Franqueado</a>
             </div>
         </nav>
     );
