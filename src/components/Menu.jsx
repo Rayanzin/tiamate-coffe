@@ -223,9 +223,9 @@ const Menu = () => {
         <ul className="grid grid-cols-3 gap-[80px]">
           {itens.map((item) => (
             <li className="w-[223px] h-[222px] flex flex-col items-center">
-              <div className="w-full h-full ml-[50px]">
+              <div className="w-full h-full mb-[-10px]">
                 <img
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                   src={item.img}
                   alt="produto"
                 />
