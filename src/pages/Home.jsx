@@ -1,4 +1,4 @@
-import Ambiente from "../components/ambiente";
+import Ambiente from "../components/Ambiente";
 import BoasVindas from "../components/BoasVindas";
 import CardapioHome from "../components/CardapioHome";
 import Comentarios from "../components/Comentarios";
