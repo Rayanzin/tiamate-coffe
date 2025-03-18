@@ -1,4 +1,5 @@
 import VideoModular from "./VideoModular";
+import img from "../imgs/video-franquado.png"
 
 const VideoHome = () => {
   return (
@@ -11,7 +12,7 @@ const VideoHome = () => {
       <VideoModular
         className="h-[600px]"
         divVideo="!w-[1168px] m-auto shadow-xl shadow-[#00000030]"
-        img={"./src/imgs/video-home.png"}
+        img={img}
         video={
           "https://www.youtube.com/embed/nsDOKftuzA8?si=F1P8I9FDn3clFt6Z&amp;controls=0"
         }

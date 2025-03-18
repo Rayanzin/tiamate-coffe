@@ -1,5 +1,14 @@
 import Slider from "react-slick";
-
+import img1 from "../imgs/nosso-ambiente-1.png"
+import img2 from "../imgs/nosso-ambiente-2.png"
+import img3 from "../imgs/nosso-ambiente-3.png"
+import img4 from "../imgs/nosso-ambiente-4.png"
+import img5 from "../imgs/nosso-ambiente-5.png"
+import img6 from "../imgs/ambiente-1.jpg"
+import img7 from "../imgs/ambiente-2.jpg"
+import img8 from "../imgs/ambiente-3.jpg"
+import img9 from "../imgs/ambiente-5.jpg"
+import img10 from "../imgs/ambiente-6.jpg"
 const NossasCafeterias = () => {
 
     const settings = {
@@ -17,34 +26,34 @@ const NossasCafeterias = () => {
 
     const imagens = [
         {
-            img: "./src/imgs/nosso-ambiente-1.png"
+            img: img1
         },
         {
-            img: "./src/imgs/nosso-ambiente-2.png"
+            img: img2
         },
         {
-            img: "./src/imgs/nosso-ambiente-3.png"
+            img: img3
         },
         {
-            img: "./src/imgs/nosso-ambiente-4.png"
+            img: img4
         },
         {
-            img: "./src/imgs/nosso-ambiente-5.png"
+            img: img5
         },
         {
-            img: "./src/imgs/ambiente-1.jpg"
+            img: img6
         },
         {
-            img: "./src/imgs/ambiente-2.jpg"
+            img: img7
         },
         {
-            img: "./src/imgs/ambiente-3.jpg"
+            img: img8
         },
         {
-            img: "./src/imgs/ambiente-5.jpg"
+            img: img9
         },
         {
-            img: "./src/imgs/ambiente-6.jpg"
+            img: img10
         },
 
     ]

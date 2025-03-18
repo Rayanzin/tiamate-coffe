@@ -1,9 +1,9 @@
 import HeaderModular from "./HeaderModular";
-
+import img from "../imgs/header-home-dois.jpeg"
 const HeaderHomeDois = () => {
     return (
         <HeaderModular className=""
-            imagem="./src/imgs/header-home-dois.jpeg"
+            imagem={img}
             textoMarcadoDois="Café Autêntico"
             textoDois="Chegou nosso café! Direto da fazenda."
         />

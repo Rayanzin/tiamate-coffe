@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import img from "../imgs/copodecafe.png"
 const QuemSomos = () => {
     const settings = {
         dots: true,
@@ -87,7 +87,7 @@ const QuemSomos = () => {
                 </div> */}
             </div>
             <div className="w-[570px] h-[600px] rounded-md overflow-hidden">
-                <img className="w-full h-full object-cover object-[85%_30%]" src="./src/imgs/copodecafe.png" alt="CopoDeCafé" />
+                <img className="w-full h-full object-cover object-[85%_30%]" src={img} alt="CopoDeCafé" />
             </div>
         </section>
     );

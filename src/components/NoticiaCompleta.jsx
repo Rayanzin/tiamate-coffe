@@ -1,6 +1,8 @@
 import Slider from "react-slick";
 import NoticiaCompletaModular from "./NoticiaCompletaModular";
-
+import img1 from "../imgs/noticia-tiamatte-1.jpg"
+import img2 from "../imgs/noticia-tiamatte-2.jpg"
+import img3 from "../imgs/noticia-tiamatte-3.jpg"
 const NoticiaCompleta = () => {
   const settings = {
     dots: false, // Exibe os pontos de navegação
@@ -29,17 +31,17 @@ const NoticiaCompleta = () => {
 
   const Noticias = [
     {
-      img: "./src/imgs/noticia-tiamatte-1.jpg",
+      img: img1,
       titulo: "Conheça cinco lugares no centro para ir com os amigos",
       href: "#noticiacompleta",
     },
     {
-      img: "./src/imgs/noticia-tiamatte-2.jpg",
+      img: img2,
       titulo: "Um gostinho moderno no coração de Fortaleza",
       href: "#noticiacompleta",
     },
     {
-      img: "./src/imgs/noticia-tiamatte-3.jpg",
+      img: img3,
       titulo: "Cafeteria é nova tendência de negócio em Salvador",
       href: "#noticiacompleta",
     },

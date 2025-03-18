@@ -1,158 +1,190 @@
 import { useState } from "react";
-
+import img1 from "../imgs/coffe-brigadeiro.png"
+import img2 from "../imgs/coffe-cookie.png"
+import img3 from "../imgs/coffe-caramelo.png"
+import img4 from "../imgs/coffe-tradicional.png"
+import img5 from "../imgs/merry-berry.png"
+import expr1 from "../imgs/expresso-tradicional.png"
+import expr2 from "../imgs/expresso-americano.png"
+import expr3 from "../imgs/expresso-machiato.png"
+import expr4 from "../imgs/expresso-chantily.png"
+import expr5 from "../imgs/expresso-latte.png"
+import cream1 from "../imgs/cream-morango.png"
+import cream2 from "../imgs/cream-baunilha.png"
+import cream3 from "../imgs/cream-chocolate.png"
+import cream4 from "../imgs/cream-churros.png"
+import italian1 from "../imgs/starberry-soda.png"
+import italian2 from "../imgs/ponkan.png"
+import italian3 from "../imgs/green-apple.png"
+import italian4 from "../imgs/peach.png"
+import cap1 from "../imgs/café-tradicional.png"
+import cap2 from "../imgs/baunilha.png"
+import cap3 from "../imgs/avela.png"
+import cap4 from "../imgs/canela.png"
+import cap5 from "../imgs/mocha.png"
+import cap6 from "../imgs/caramelo.png"
+import cap7 from "../imgs/classico-cremoso.png"
+import cap8 from "../imgs/latte-tea.png"
+import cap9 from "../imgs/choco-tea.png"
+import ice1 from "../imgs/ice-tea-pessego.jpg"
+import ice2 from "../imgs/ice-tea-limao.jpg"
+import ice3 from "../imgs/suco-laranja.png"
+import ice4 from "../imgs/suco-uva.jpg"
+import ice5 from "../imgs/agua.jpg"
+import ice6 from "../imgs/agua-c-gas.jpg"
 const Menu = () => {
   const cardapio = [
     {
       Nome: "Lançamentos",
       MerryBerry: {
         nome: "Merry Berry",
-        img: "./src/imgs/merry-berry.png",
+        img: img5,
       },
     },
     {
       Nome: "Expressos",
       Tradicional: {
         nome: "Tradicional",
-        img: "./src/imgs/expresso-tradicional.png",
+        img: expr1,
       },
       Americano: {
         nome: "Americano",
-        img: "./src/imgs/expresso-americano.png",
+        img: expr2,
       },
       Macchiato: {
         nome: "Macchiato",
-        img: "./src/imgs/expresso-machiato.png",
+        img: expr3,
       },
       Chantilly: {
         nome: "Chantilly",
-        img: "./src/imgs/expresso-chantily.png",
+        img: expr4,
       },
       Latte: {
         nome: "Latte",
-        img: "./src/imgs/expresso-latte.png",
+        img: expr5,
       },
     },
     {
       Nome: "Tiamatino Coffee",
       coffeebrigadeiro: {
         nome: "Tiamatino coffee brigadeiro",
-        img: "./src/imgs/coffe-brigadeiro.png",
+        img: img1,
       },
       coffeecookie: {
         nome: "Tiamatino coffee cookie",
-        img: "./src/imgs/coffe-cookie.png",
+        img: img2,
       },
       coffeecaramelo: {
         nome: "Tiamatino coffee caramelo",
-        img: "./src/imgs/coffe-caramelo.png",
+        img: img3,
       },
       coffeetradicional: {
         nome: "Tiamatino coffee tradicional",
-        img: "./src/imgs/coffe-tradicional.png",
+        img: img4,
       },
     },
     {
       Nome: "Tiamatino Cream",
       creammorango: {
         nome: "Tiamatino cream de morango",
-        img: "./src/imgs/cream-morango.png",
+        img: cream1,
       },
       creambaunilha: {
         nome: "Tiamatino cream de baunilha",
-        img: "./src/imgs/cream-baunilha.png",
+        img: cream2,
       },
       creamchocolate: {
         nome: "Tiamatino cream chocolate",
-        img: "./src/imgs/cream-chocolate.png",
+        img: cream3,
       },
       creamchurros: {
         nome: "Tiamatino cream de churros",
-        img: "./src/imgs/cream-churros.png",
+        img: cream4,
       },
     },
     {
       Nome: "Bebidas Italianas",
       StrawberrySoda: {
         nome: "Strawberry Soda",
-        img: "./src/imgs/starberry-soda.png",
+        img: italian1,
       },
       PonkanTangerineSoda: {
         nome: "Ponkan Tangerine Soda",
-        img: "./src/imgs/ponkan.png",
+        img: italian2,
       },
       GreenAppleSoda: {
         nome: "Green Apple Soda",
-        img: "./src/imgs/green-apple.png",
+        img: italian3,
       },
       PeachSoda: {
         nome: "Peach Soda",
-        img: "./src/imgs/peach.png",
+        img: italian4,
       },
     },
     {
       Nome: "Cappuccino",
       Tradicional: {
         nome: "Tradicional",
-        img: "./src/imgs/café-tradicional.png",
+        img: cap1,
       },
       baunilha: {
         nome: "Baunilha",
-        img: "./src/imgs/baunilha.png",
+        img: cap2,
       },
       avela: {
         nome: "Avelã",
-        img: "./src/imgs/avela.png",
+        img: cap3,
       },
       chocolatecomcanela: {
         nome: "Chocolate com canela",
-        img: "./src/imgs/canela.png",
+        img: cap4,
       },
       mocha: {
         nome: "Mocha",
-        img: "./src/imgs/mocha.png",
+        img: cap5,
       },
       caramelotiamate: {
         nome: "caramelo tiamate",
-        img: "./src/imgs/caramelo.png",
+        img: cap6,
       },
       chocolatecremoso: {
         nome: "Chocolate Clássico Cremoso",
-        img: "./src/imgs/classico-cremoso.png",
+        img: cap7,
       },
       lattetea: {
         nome: "Latte tea",
-        img: "./src/imgs/latte-tea.png",
+        img: cap8,
       },
       chocotea: {
         nome: "Choco Tea",
-        img: "./src/imgs/choco-tea.png",
+        img: cap9,
       },
     },
     {
       Nome: "Bebidas Geladas",
       IceTeaPessego: {
         nome: "Ice Tea Pêssego",
-        img: "./src/imgs/ice-tea-pessego.jpg",
+        img: ice1,
       },
       IceTeaLimao: {
         nome: "Ice Tea Limão",
-        img: "./src/imgs/ice-tea-limao.jpg",
+        img: ice2,
       },
       Sucode: {
         nome: "Laranja",
-        img: "./src/imgs/suco-laranja.png",
+        img: ice3,
       },
       SucodeUva: {
         nome: "Suco de Uva",
-        img: "./src/imgs/suco-uva.jpg",
+        img: ice4,
       },
       Águasemgas: {
         nome: "Água sem gás",
-        img: "./src/imgs/agua.jpg",
+        img: ice5,
       },
       Águacomgas: {
         nome: "Água com gás",
-        img: "./src/imgs/agua-c-gas.jpg",
+        img: ice6,
       },
     },
   ];
@@ -162,19 +194,19 @@ const Menu = () => {
   const [itens, setItens] = useState([
     {
       nome: "Tiamatino coffee brigadeiro",
-      img: "./src/imgs/coffe-brigadeiro.png",
+      img: img1,
     },
     {
       nome: "Tiamatino coffee cookie",
-      img: "./src/imgs/coffe-cookie.png",
+      img: img2,
     },
     {
       nome: "Tiamatino coffee caramelo",
-      img: "./src/imgs/coffe-caramelo.png",
+      img: img3,
     },
     {
       nome: "Tiamatino coffee tradicional",
-      img: "./src/imgs/coffe-tradicional.png",
+      img: img4,
     },
   ]);
 
@@ -204,14 +236,12 @@ const Menu = () => {
             <li className="text-[18px] font-medium text-letras2" key={index}>
               <div className="flex items-center gap-[23px]">
                 <span
-                  className={`block w-[18px] h-[2px] bg-letras2 ${
-                    selectedCategory === index ? "spanon" : ""
-                  }`}
+                  className={`block w-[18px] h-[2px] bg-letras2 ${selectedCategory === index ? "spanon" : ""
+                    }`}
                 ></span>
                 <button
-                  className={`duration-300 ${
-                    selectedCategory === index ? "categoriaon" : ""
-                  }`}
+                  className={`duration-300 ${selectedCategory === index ? "categoriaon" : ""
+                    }`}
                   onClick={() => mudarCategoria(index, categorias)}
                 >
                   {categorias.Nome}

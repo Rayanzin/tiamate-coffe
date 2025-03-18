@@ -1,9 +1,9 @@
 import MaisInfoModular from "./MaisInfoModular";
-
+import img from "../imgs/mais-info1.png"
 const MaisInfoUm = () => {
     return (
         <MaisInfoModular
-            imagem={`./src/imgs/mais-info1.png`}
+            imagem={img}
             titulo={`Quer lucrar com sua própria Tiamate? Seja um franqueado!`}
         />
     );
