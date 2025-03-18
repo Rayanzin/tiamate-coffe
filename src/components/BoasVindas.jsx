@@ -5,7 +5,7 @@ const BoasVindas = () => {
         <div className="w-[56%] h-[700px] ">
           <img
             className="w-full h-full object-cover object-[0%_0%]"
-            src="./src/imgs/sundae.png"
+            src="../public/imgs/sundae.png"
             alt="sundaes"
           />
         </div>

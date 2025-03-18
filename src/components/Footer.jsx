@@ -1,11 +1,10 @@
-import logo from "../imgs/logo-tiamate.png"
 const Footer = () => {
     return (
         <div className="w-screen bg-secundaria text-letras py-[20px]  flex flex-col items-center">
             <nav className="flex gap-[365px] border-b-2 border-primaria items-center py-[50px]">
                 <div className="w-[160px] h-[52px]">
                     <a href="/">
-                        <img src={logo} alt="logo" />
+                        <img src={`../public/imgs/logo-tiamate.png`} alt="logo" />
                     </a>
                 </div>
                 <ul className="list-none flex gap-[45px] ">
