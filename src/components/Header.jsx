@@ -6,7 +6,7 @@ const Header = () => {
             <ul className="list-none flex gap-[45px] items-center ">
                 <li className='w-36 h-12'>
                     <a  href="/">
-                        <img className='w-full h-full' src="../public/imgs/logo-tiamate.png" alt="Logo" />
+                        <img className='w-full h-full' src="./src/imgs/logo-tiamate.png" alt="Logo" />
                     </a>
                 </li>
                 <li className='hover:mb-2 duration-100'>
