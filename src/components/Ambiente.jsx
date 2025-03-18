@@ -1,3 +1,10 @@
+import img1 from "../imgs/ambiente-1.jpg"
+import img2 from "../imgs/ambiente-2.jpg"
+import img3 from "../imgs/ambiente-3.jpg"
+import img4 from "../imgs/ambiente-4.jpg"
+import img5 from "../imgs/ambiente-5.jpg"
+import img6 from "../imgs/ambiente-6.jpg"
+
 const Ambiente = () => {
   return (
     <section className="flex items-center flex-col w-full h-[900px] px-[135px] pt-[169px] gap-[58px] mb-[40px]">
@@ -39,22 +46,22 @@ const Ambiente = () => {
       </div>
       <ul className=" bg-[#00000050] w-[1170px] h-[780px] grid grid-cols-3">
         <li className="w-[390px] h-[390px]">
-            <img className="object-cover w-full h-full" src="./src/imgs/ambiente-1.jpg" alt="pessoa tomando café" />
+            <img className="object-cover w-full h-full" src={img1} alt="pessoa tomando café" />
         </li>
         <li className="w-[390px] h-[390px]">
-            <img className="object-cover w-full h-full" src="./src/imgs/ambiente-2.jpg" alt="pessoa tomando café" />
+            <img className="object-cover w-full h-full" src={img2} alt="pessoa tomando café" />
         </li>
         <li className="w-[390px] h-[390px]">
-            <img className="object-cover w-full h-full" src="./src/imgs/ambiente-3.jpg" alt="pessoa tomando café" />
+            <img className="object-cover w-full h-full" src={img3} alt="pessoa tomando café" />
         </li>
         <li className="w-[390px] h-[390px]">
-            <img className="object-cover w-full h-full" src="./src/imgs/ambiente-4.jpg" alt="pessoa tomando café" />
+            <img className="object-cover w-full h-full" src={img4} alt="pessoa tomando café" />
         </li>
         <li className="w-[390px] h-[390px]">
-            <img className="object-cover w-full h-full" src="./src/imgs/ambiente-5.jpg" alt="pessoa tomando café" />
+            <img className="object-cover w-full h-full" src={img5} alt="pessoa tomando café" />
         </li>
         <li className="w-[390px] h-[390px]">
-            <img className="object-cover w-full h-full" src="./src/imgs/ambiente-6.jpg" alt="pessoa tomando café" />
+            <img className="object-cover w-full h-full" src={img6} alt="pessoa tomando café" />
         </li>
       </ul>
     </section>
