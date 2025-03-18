@@ -4,6 +4,7 @@ import img2 from "../imgs/franquia-togo2.jpeg"
 import img3 from "../imgs/franquia-togo3.jpeg"
 import img4 from "../imgs/franquia-togo4.jpeg"
 import img5 from "../imgs/franquia-togo5.jpeg"
+import img6 from "../imgs/franquia-togo.jpeg"
 
 const ModeloToGo = () => {
     return (
@@ -14,7 +15,7 @@ const ModeloToGo = () => {
             Faturamento={` 25`}
             Royaltyes={` 1.500,00`}
             Investimento={` 100`}
-            imgPrincipal={`./src/imgs/franquia-togo.jpeg`}
+            imgPrincipal={img6}
             img1={img1}
             img2={img2}
             img3={img3}
