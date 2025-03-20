@@ -26,3 +26,17 @@ html{
     width: 30px;
     background-color: #C7794A;
 }
+.overlayoff{
+    opacity: 0;
+    visibility: hidden;
+}
+.overlayon{
+    opacity: 1;
+    visibility: visible;
+}
+.menuoff{
+    transform: translateX(-100%);
+}
+.menuon{
+    transform: translateX(0%);
+}
