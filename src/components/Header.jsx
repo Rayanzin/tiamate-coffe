@@ -1,6 +1,11 @@
 import { useState } from "react"
 import img from "../imgs/logo-tiamate.png"
 const Header = () => {
+    // sm -> 640px
+    // md -> 768px
+    // lg -> 1024px
+    // xl -> 1280px
+    // 2xl -> 1535px
 
     const [overlay, setOverlay] = useState(false)
     const [menu, setMenu] = useState(false)
@@ -15,8 +20,8 @@ const Header = () => {
     }
 
     return (
-        <section className='relative w-full flex items-center justify-center bg-secundaria px-[10px]'>
-            <nav className="w-[1190px] text-letras no-underline flex items-center bg-secundaria py-[30px] lg:justify-between max-lg:justify-evenly">
+        <section className='sticky top-0 z-50 w-full flex items-center justify-center bg-secundaria px-[10px]'>
+            <nav className="w-[1190px] text-letras no-underline flex items-center bg-secundaria py-[30px] lg:justify-between max-lg:justify-evenly ">
                 <ul className="list-none flex gap-[45px] items-center max-lg:*:hidden">
                     <li className='w-36 h-12'>
                         <a href="/">
@@ -48,8 +53,8 @@ const Header = () => {
                         <img className='w-full h-full' src={img} alt="Logo" />
                     </a>
                 </div>
-                <div className=''>
-                    <a className="text-letras2 py-[16px] px-[23px] bg-quaternaria rounded-md hover:bg-bghover hover:text-l2hover cursor-pointer" href="/noticias">Seja um Franqueado</a>
+                <div className='text-nowrap'>
+                    <a className="flex w-full h-full justify-center items-center py-[16px] px-[23px] text-letras2  bg-quaternaria rounded-md hover:bg-bghover hover:text-l2hover cursor-pointer  max-md:text-[12px] max-md:py-[10px] max-md:px-[16px] max-sm:hidden" href="/noticias">Seja um Franqueado</a>
                 </div>
             </nav>
             <div className={`z-20 absolute w-[300px] h-screen  bg-secundaria left-0 top-0 translate-x-[-100%] p-[10px] duration-300 ${menu ? "menuon" : "menuff"}`}>
@@ -74,10 +79,12 @@ const Header = () => {
                     <li className="hover:bg-l2hover">
                         <a href="/Cardapio">Cardápio</a>
                     </li>
+                    <li className='hover:bg-l2hover text-nowrap'>
+                        <a href="/noticias">Seja um Franqueado</a>
+                    </li>
                 </ul>
             </div>
             <div id='overlay' onClick={fecharMenu} className={`z-10 w-screen h-screen absolute top-0 left-0 bg-[#00000070] duration-200 ${overlay ? "overlayon" : "overlayoff"}`} ></div>
-            {/*  */}
         </section>
     );
 }

@@ -32,7 +32,7 @@ const Footer = () => {
                 </nav>
             </div>
             <div className='w-full flex items-center justify-center bg-secundaria px-[10px]'>
-                <div className="w-[1190px] flex py-[40px] justify-between">
+                <div className="w-[1190px] flex items-center py-[40px] justify-between max-[680px]:gap-[20px] max-[680px]:flex-col">
                     <ul className="flex gap-[24px] items-center">
                         <li>
                             <p className="text-[14px]">Curta e <br /> Compartilhe</p>
@@ -66,7 +66,7 @@ const Footer = () => {
                             </a>
                         </li>
                     </ul>
-                    <div className="flex items-center gap-[30px]">
+                    <div className="flex items-center gap-[30px] ">
                         <p className="text-[10px] text-primaria">© 2021 Tiamate - Todos os Direitos Reservados</p>
                         <div className="flex items-center gap-[2px]">
                             <svg width="49" height="42" viewBox="0 0 49 42" fill="none" xmlns="http://www.w3.org/2000/svg">
