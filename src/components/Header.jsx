@@ -1,11 +1,7 @@
 import { useState } from "react"
 import img from "../imgs/logo-tiamate.png"
 const Header = () => {
-    // sm -> 640px
-    // md -> 768px
-    // lg -> 1024px
-    // xl -> 1280px
-    // 2xl -> 1535px
+   
 
     const [overlay, setOverlay] = useState(false)
     const [menu, setMenu] = useState(false)
