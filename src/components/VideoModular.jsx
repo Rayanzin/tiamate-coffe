@@ -1,18 +1,34 @@
+import React, { useRef } from "react";
+
 const VideoModular = ({ className = "", divVideo = "", video, img }) => {
+  const iframeRef = useRef(null);
+  const botaoRef = useRef(null);
+  const imagemvideoRef = useRef(null);
+  const overlayRef = useRef(null);
+
   function startVideo() {
-    let iframe = document.getElementById("youtube-iframe");
-    let iframeSrc = iframe.src; // Captura o src atual do iframe
-    iframe.src = iframeSrc + "&autoplay=1"; // Adiciona o parâmetro autoplay=1 para iniciar o vídeo
-    let tempoDeAtraso = 1500;
-    let botao = document.getElementById("botao");
-    let imagemvideo = document.getElementById("imagemvideo");
-    let overlay = document.getElementById("overlay");
+    const iframe = iframeRef.current;
+    const botao = botaoRef.current;
+    const imagemvideo = imagemvideoRef.current;
+    const overlay = overlayRef.current;
+
+    if (!iframe) return;
+
+    let iframeSrc = iframe.src;
+    if (!iframeSrc.includes("autoplay=1")) {
+      iframe.src = iframeSrc + "&autoplay=1&mute=1";
+    }
+
     setTimeout(() => {
-      botao.style.display = "none";
-      imagemvideo.style.display = "none";
-      overlay.style.display = "none";
-    }, tempoDeAtraso);
+      if (botao) botao.style.display = "none";
+      if (imagemvideo) imagemvideo.style.display = "none";
+      if (overlay) {
+        overlay.style.opacity = "0";
+        overlay.style.pointerEvents = "none";
+      }
+    }, 1500);
   }
+
   return (
     <section
       className={`w-full h-[500px] mb-[135px] mt-[83px] bg-white ${className}`}
@@ -20,19 +36,23 @@ const VideoModular = ({ className = "", divVideo = "", video, img }) => {
       <div
         className={`relative w-full h-full flex justify-center items-center ${divVideo}`}
       >
-        <iframe
-          id="youtube-iframe"
-          className="relative w-full h-full"
-          width="560"
-          height="315"
-          src={video}
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
+        {/* RESPONSIVE IFRAME WRAPPER */}
+        <div className="relative w-full h-full">
+          <iframe
+            ref={iframeRef}
+            className="absolute top-0 left-0 w-full h-full"
+            width="560"
+            height="315"
+            src={video}
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
+        </div>
+
         <button
-          id="botao"
-          className="absolute z-10 flex flex-col gap-[22px]  items-center"
+          ref={botaoRef}
+          className="absolute z-10 flex flex-col gap-[22px] items-center"
           onClick={startVideo}
         >
           <svg
@@ -50,15 +70,18 @@ const VideoModular = ({ className = "", divVideo = "", video, img }) => {
           </svg>
           <p className="text-[18px] text-letras">Assistir Vídeo</p>
         </button>
+
         <div
-          id="imagemvideo"
-          className={`top-0 left-0 !w-full h-full absolute `}
+          ref={imagemvideoRef}
+          className="top-0 left-0 !w-full h-full absolute"
         >
           <img className="w-full h-full" src={img} alt="imagem do video" />
         </div>
+
         <div
-          id="overlay"
-          className={`top-0 left-0 bg-[#0000009c] !w-full h-full absolute `}
+          ref={overlayRef}
+          style={{ opacity: 1 }}
+          className="top-0 left-0 bg-[#0000009c] !w-full h-full absolute transition-opacity duration-500"
         ></div>
       </div>
     </section>
