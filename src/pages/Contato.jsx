@@ -5,7 +5,7 @@ import NossasCafeterias from "../components/NossasCafeterias";
 
 const Contato = () => {
     return (
-        <main className="max-w-[1920px] m-auto bg-white">
+        <main className="max-w-[1920px] m-auto bg-white overflow-hidden">
             <HeaderConato/>
             <NossasCafeterias/>
             <Enderecos/>

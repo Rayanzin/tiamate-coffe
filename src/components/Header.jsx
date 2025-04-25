@@ -16,8 +16,8 @@ const Header = () => {
     }
 
     return (
-        <section className='sticky top-0 z-50 w-full flex items-center justify-center bg-secundaria px-[10px]'>
-            <nav className="w-[1190px] text-letras no-underline flex items-center bg-secundaria py-[30px] lg:justify-between max-lg:justify-evenly ">
+        <section className='sticky top-0 z-50 w-full flex items-center justify-center bg-secundaria px-[10px] '>
+            <nav className="w-[1190px] text-letras no-underline flex items-center bg-secundaria py-[30px] lg:justify-between max-lg:justify-evenly max-sm:py-2">
                 <ul className="list-none flex gap-[45px] items-center max-lg:*:hidden">
                     <li className='w-36 h-12'>
                         <a href="/">

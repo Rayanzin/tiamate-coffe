@@ -4,8 +4,8 @@ import img from "../imgs/video-franquado.png"
 const VideoHome = () => {
   return (
     <>
-      <div className="w-[1167px] m-auto">
-        <h2 className="text-start font-bold text-[50px] text-primaria leading-[100%]">
+      <div className="max-w-[1167px] m-auto max-[1185px]:px-[20px]">
+        <h2 className="text-start font-bold text-[50px] text-primaria leading-[100%] max-[800px]:text-[32px] max-sm:text-[24px]">
           Coisas boas acontecem àqueles <br /> que gostam de café
         </h2>
       </div>

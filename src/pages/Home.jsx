@@ -10,7 +10,7 @@ import VideoHome from "../components/VideoHome";
 
 const Home = () => {
     return (
-        <main className="max-w-[1920px] m-auto bg-white">
+        <main className="max-w-[1920px] m-auto bg-white overflow-hidden">
             <HeaderHome />
             <BoasVindas/>
             <Missoes/>

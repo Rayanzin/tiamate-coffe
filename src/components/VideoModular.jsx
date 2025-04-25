@@ -28,16 +28,20 @@ const VideoModular = ({ className = "", divVideo = "", video, img }) => {
       }
     }, 1500);
   }
-
+  // sm -> 640px
+  // md -> 768px
+  // lg -> 1024px
+  // xl -> 1280px
+  // 2xl -> 1535px
   return (
     <section
-      className={`w-full h-[500px] mb-[135px] mt-[83px] bg-white ${className}`}
+      className={`w-full !max-h-[500px] mb-[135px] mt-[83px] bg-white ${className} px-[20px] max-lg:h-[400px] max-md:h-[300px] max-[550px]:h-[250px] max-sm:my-[60px]`}
     >
       <div
-        className={`relative w-full h-full flex justify-center items-center ${divVideo}`}
+        className={`relative !max-w-[100%] h-full flex justify-center items-center ${divVideo} `}
       >
         {/* RESPONSIVE IFRAME WRAPPER */}
-        <div className="relative w-full h-full">
+        <div className="relative w-[100%] h-full">
           <iframe
             ref={iframeRef}
             className="absolute top-0 left-0 w-full h-full"
@@ -52,11 +56,11 @@ const VideoModular = ({ className = "", divVideo = "", video, img }) => {
 
         <button
           ref={botaoRef}
-          className="absolute z-10 flex flex-col gap-[22px] items-center"
+          className="absolute z-10 flex flex-col gap-[22px] items-center max-md:gap-[16px] max-sm:gap-[10px]"
           onClick={startVideo}
         >
           <svg
-            className="*:hover:fill-letras2 *:duration-200 duration-300 shadow-2xl active:shadow-primaria rounded-2xl"
+            className="*:hover:fill-letras2 *:duration-200 duration-300 shadow-2xl active:shadow-primaria rounded-2xl max-md:w-[80%] max-sm:w-[60%] h-[100%]"
             width="166"
             height="113"
             viewBox="0 0 166 113"
@@ -68,7 +72,7 @@ const VideoModular = ({ className = "", divVideo = "", video, img }) => {
               fill="#CF9A5A"
             />
           </svg>
-          <p className="text-[18px] text-letras">Assistir Vídeo</p>
+          <p className="text-[18px] text-letras max-md:text-[16px] max-sm:text-[14px] ">Assistir Vídeo</p>
         </button>
 
         <div

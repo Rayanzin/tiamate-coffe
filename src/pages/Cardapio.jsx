@@ -5,7 +5,7 @@ import Menu from "../components/Menu";
 
 const Cardapio = () => {
     return (
-        <main className="max-w-[1920px] m-auto bg-white">
+        <main className="max-w-[1920px] m-auto bg-white overflow-hidden">
             <HeaderCardapio/>
             <Menu/>
             <Franquia />

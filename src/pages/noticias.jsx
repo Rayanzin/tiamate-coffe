@@ -13,7 +13,7 @@ import VideoFranqueado from "../components/VideoFranqueado";
 
 const Noticias = () => {
   return (
-    <main className="max-w-[1920px] m-auto bg-white">
+    <main className="max-w-[1920px] m-auto bg-white overflow-hidden">
       <HeaderNoticias />
       <QuemSomos/>
       <VideoFranqueado/>
