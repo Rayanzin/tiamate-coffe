@@ -35,7 +35,7 @@ const VideoModular = ({ className = "", divVideo = "", video, img }) => {
   // 2xl -> 1535px
   return (
     <section
-      className={`w-full !max-h-[500px] mb-[135px] mt-[83px] bg-white ${className} px-[20px] max-lg:h-[400px] max-md:h-[300px] max-[550px]:h-[250px] max-sm:my-[60px]`}
+      className={`w-full !max-h-[500px] mb-[135px] mt-[83px] bg-white ${className} px-[20px] max-lg:h-[400px] max-md:h-[300px] max-[550px]:h-[200px] max-sm:my-[60px]`}
     >
       <div
         className={`relative !max-w-[100%] h-full flex justify-center items-center ${divVideo} `}

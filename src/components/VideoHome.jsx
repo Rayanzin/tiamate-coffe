@@ -5,7 +5,7 @@ const VideoHome = () => {
   return (
     <>
       <div className="max-w-[1167px] m-auto max-[1185px]:px-[20px]">
-        <h2 className="text-start font-bold text-[50px] text-primaria leading-[100%] max-[800px]:text-[32px] max-sm:text-[24px]">
+        <h2 className="text-start font-bold text-[50px] text-primaria leading-[100%] max-[800px]:text-[32px] max-sm:text-[24px] max-[420px]:text-[18px]">
           Coisas boas acontecem àqueles <br /> que gostam de café
         </h2>
       </div>
