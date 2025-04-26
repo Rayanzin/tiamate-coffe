@@ -64,7 +64,7 @@ const CardapioHome = () => {
   ];
 
   return (
-    <section className="flex flex-col items-center w-full h-[900px] pt-[246px] bg-bgcard">
+    <section className="flex flex-col items-center w-full h-[900px] pt-[246px] bg-bgcard mt-[-200px] max-xl:mt-[-150px] max-lg:py-20">
       <p className="text-[18px] font-normal text-letras2">Confira nosso</p>
       <h2 className="text-[50px] font-bold text-primaria">Cardápio</h2>
       <ul className="w-[900px] mt-[77px] mb-[72px] px-[70px]">

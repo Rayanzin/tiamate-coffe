@@ -1,19 +1,24 @@
-import img1 from "../imgs/ambiente-1.jpg"
-import img2 from "../imgs/ambiente-2.jpg"
-import img3 from "../imgs/ambiente-3.jpg"
-import img4 from "../imgs/ambiente-4.jpg"
-import img5 from "../imgs/ambiente-5.jpg"
-import img6 from "../imgs/ambiente-6.jpg"
+import img1 from "../imgs/ambiente-1.jpg";
+import img2 from "../imgs/ambiente-2.jpg";
+import img3 from "../imgs/ambiente-3.jpg";
+import img4 from "../imgs/ambiente-4.jpg";
+import img5 from "../imgs/ambiente-5.jpg";
+import img6 from "../imgs/ambiente-6.jpg";
 
 const Ambiente = () => {
+  // sm -> 640px
+  // md -> 768px
+  // lg -> 1024px
+  // xl -> 1280px
+  // 2xl -> 1535px
   return (
-    <section className="flex items-center flex-col w-full h-[900px] px-[135px] pt-[169px] gap-[58px] mb-[40px]">
+    <section className="flex items-center flex-col w-full  px-[135px] pt-[169px] gap-[58px] mb-[40px] max-lg:px-0 max-lg:py-20">
       <div>
-        <p className="text-[18px] font-normal text-letras2">
+        <p className="text-[18px] font-normal text-letras2 max-sm:text-[12px]">
           Para você e seus amigos
         </p>
-        <div className="flex justify-between w-[1170px]">
-          <h2 className="text-[50px] font-bold text-primaria">
+        <div className="w-[1170px] flex justify-between max-xl:w-[780px] items-center max-[850px]:w-[520px] max-sm:w-[345.66px]">
+          <h2 className="text-[50px] font-bold text-primaria max-[850px]:text-[32px] max-sm:text-[20px]">
             Ambiente agradável
           </h2>
           <div>
@@ -23,11 +28,11 @@ const Ambiente = () => {
                 target="_blank"
                 href="https://www.instagram.com/tiamatefortaleza/"
               >
-                <p className="text-[18px] font-normal text-letras2">
+                <p className="text-[18px] font-normal text-letras2 max-sm:text-[12px]">
                   Veja mais
                 </p>
                 <svg
-                  className="*:hover:fill-bghover"
+                  className="*:hover:fill-bghover max-sm:w-[40px] max-sm:h-[40px]"
                   width="62"
                   height="61"
                   viewBox="0 0 62 61"
@@ -44,24 +49,48 @@ const Ambiente = () => {
           </div>
         </div>
       </div>
-      <ul className=" bg-[#00000050] w-[1170px] h-[780px] grid grid-cols-3">
-        <li className="w-[390px] h-[390px]">
-            <img className="object-cover w-full h-full" src={img1} alt="pessoa tomando café" />
+      <ul className=" bg-[#00000050] w-[1170px]  grid grid-cols-3 max-xl:w-[780px] overflow-hidden max-lg max-[850px]:w-[520px] max-[850px]:grid-cols-2 max-sm:w-[346.66px] max-sm:grid-cols-3">
+        <li className="w-[390px] h-[390px] max-xl:w-[260px] max-xl:h-[260px] max-sm:w-[115.55px] max-sm:h-[115.55px]">
+          <img
+            className="object-cover w-full h-full"
+            src={img1}
+            alt="pessoa tomando café"
+          />
         </li>
-        <li className="w-[390px] h-[390px]">
-            <img className="object-cover w-full h-full" src={img2} alt="pessoa tomando café" />
+        <li className="w-[390px] h-[390px] max-xl:w-[260px] max-xl:h-[260px] max-sm:w-[115.55px] max-sm:h-[115.55px]">
+          <img
+            className="object-cover w-full h-full"
+            src={img2}
+            alt="pessoa tomando café"
+          />
         </li>
-        <li className="w-[390px] h-[390px]">
-            <img className="object-cover w-full h-full" src={img3} alt="pessoa tomando café" />
+        <li className="w-[390px] h-[390px] max-xl:w-[260px] max-xl:h-[260px] max-sm:w-[115.55px] max-sm:h-[115.55px]">
+          <img
+            className="object-cover w-full h-full"
+            src={img3}
+            alt="pessoa tomando café"
+          />
         </li>
-        <li className="w-[390px] h-[390px]">
-            <img className="object-cover w-full h-full" src={img4} alt="pessoa tomando café" />
+        <li className="w-[390px] h-[390px] max-xl:w-[260px] max-xl:h-[260px] max-sm:w-[115.55px] max-sm:h-[115.55px]">
+          <img
+            className="object-cover w-full h-full"
+            src={img4}
+            alt="pessoa tomando café"
+          />
         </li>
-        <li className="w-[390px] h-[390px]">
-            <img className="object-cover w-full h-full" src={img5} alt="pessoa tomando café" />
+        <li className="w-[390px] h-[390px] max-xl:w-[260px] max-xl:h-[260px] max-sm:w-[115.55px] max-sm:h-[115.55px]">
+          <img
+            className="object-cover w-full h-full"
+            src={img5}
+            alt="pessoa tomando café"
+          />
         </li>
-        <li className="w-[390px] h-[390px]">
-            <img className="object-cover w-full h-full" src={img6} alt="pessoa tomando café" />
+        <li className="w-[390px] h-[390px] max-xl:w-[260px] max-xl:h-[260px] max-sm:w-[115.55px] max-sm:h-[115.55px]">
+          <img
+            className="object-cover w-full h-full"
+            src={img6}
+            alt="pessoa tomando café"
+          />
         </li>
       </ul>
     </section>
