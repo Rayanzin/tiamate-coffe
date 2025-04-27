@@ -28,7 +28,7 @@ const CardapioHome = () => {
         },
       },
       {
-        breakpoint: 600, // Para telas de 600px ou menores (como celulares)
+        breakpoint: 640, // Para telas de 600px ou menores (como celulares)
         settings: {
           slidesToShow: 1,
         },
@@ -63,12 +63,17 @@ const CardapioHome = () => {
     },
   ];
 
+  // sm -> 640px
+  // md -> 768px
+  // lg -> 1024px
+  // xl -> 1280px
+  // 2xl -> 1535px
   return (
     <section className="flex flex-col items-center w-full h-[900px] pt-[246px] bg-bgcard mt-[-200px] max-xl:mt-[-150px] max-lg:py-20">
       <p className="text-[18px] font-normal text-letras2">Confira nosso</p>
       <h2 className="text-[50px] font-bold text-primaria">Cardápio</h2>
-      <ul className="w-[900px] mt-[77px] mb-[72px] px-[70px]">
-        <Slider {...settings}>
+      <ul className=" mt-[77px] mb-[72px] px-[70px] max-lg:mx-0  max-lg:px-0">
+        <Slider className="w-[900px] max-lg:w-[560px] max-sm:w-[280px]" {...settings}>
           {bebidas.map((bebidas, index) => (
             <li key={index} className="!w-[280px] h-[250px] focus:outline-none">
               <img
@@ -81,7 +86,7 @@ const CardapioHome = () => {
         </Slider>
       </ul>
       <ButtonModular
-        className="!bg-letras3 w-[304px] h-[60px]"
+        className="!bg-letras3 !w-[304px] h-[60px] max-:!w-[250px]"
         type={`primary`}
         link={`/cardapio`}
         buttonName={`Ver mais`}
