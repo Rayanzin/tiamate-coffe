@@ -22,7 +22,7 @@ const HeaderModular = ({
       </div>
       <div className="relative h-full m-auto">
         <div
-          className={`z-10 relative top-[110px] w-[1170px] m-auto ${className} max-md:top-[50px] max-sm:top-[50px]`}
+          className={`z-10 relative top-[110px] !max-w-[1170px] m-auto ${className} max-md:top-[50px] max-sm:top-[50px]`}
         >
           <div className={`flex flex-col gap-[14px] w-[570px] ${classH2} max-[1190px]:px-[10px] max-lg:w-[400px] max-lg:ml-[10%] max-sm:ml-[50px] max-sm:w-[300px]`}>
             <h2 className={`text-letras text-[55px] leading-none font-bold max-lg:text-[40px] max-sm:text-[30px]`}>

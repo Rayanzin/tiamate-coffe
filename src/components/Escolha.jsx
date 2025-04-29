@@ -2,8 +2,8 @@ import img1 from "../imgs/escolha-left.jpeg"
 import img2 from "../imgs/escolha-rigth.jpeg"
 const Escolha = () => {
     return (
-        <section className="relative bg-bgcard pt-[143px] pb-[164px]">
-            <div className="flex justify-center gap-[64px] escolhas">
+        <section className="relative bg-bgcard pt-[143px] pb-[164px] px-[20px]">
+            <div className="flex justify-center gap-[64px] escolhas max-xl:flex-col max-xl:items-center">
                 <div className="z-10 w-[295px] h-[360px] rounded-md overflow-hidden hover:scale-[1.05] duration-300 item">
                     <a className="relative" href="#coffe">
                         <img className="w-full h-h-full" src={img1} alt="cafés" />
@@ -36,7 +36,7 @@ const Escolha = () => {
                 </div>
                 <div className="flex flex-col justify-center items-center text-center">
                     <p className="text-[18px]">A Tiamate oferece 2 modelos <br /> de franquia personalizados.</p>
-                    <h2 className="text-[50px] text-primaria leading-none">Escolha a Tiamate <br /> ideal para você</h2>
+                    <h2 className="text-[50px] text-primaria leading-none max-sm:text-[32px] max-sm:mt-[10px]">Escolha a Tiamate <br /> ideal para você</h2>
                 </div>
                 <div className="z-10 w-[295px] h-[360px] rounded-md overflow-hidden hover:scale-[1.05] duration-300 item">
                     <a className="relative" href="#togo">
