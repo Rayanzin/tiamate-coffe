@@ -22,8 +22,9 @@ const Diferenciais = () => {
         ),
     })
     return (
-        <section className=" flex justify-center pt-[284px] pb-[237px]">
-            <div className="pl-[130px] mt-[28px]">
+        <section className="max-w-[1440px] flex justify-center m-auto pt-[284px] pb-[237px]">
+           <div className="w-[1170px] flex justify-center">
+           <div className=" mt-[28px]">
                 <h2 className="w-[300px] leading-none mb-[40px] text-[50px] font-bold text-primaria">Diferenciais da Tiamate</h2>
                 <div className="grid grid-cols-4 gap-[22px] cursor-pointer ">
                     <div onMouseEnter={() => setDesc({
@@ -206,6 +207,7 @@ const Diferenciais = () => {
                 <h2 className="text-[50px] font-semibold text-primaria leading-none">{desc.h2}</h2>
                 <p className="text-[18px] whitespace-nowrap">{desc.desc}</p>
             </div>
+           </div>
         </section>
     );
 }
