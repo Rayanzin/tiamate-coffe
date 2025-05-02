@@ -23,7 +23,7 @@ const Estrelas = ({ nota }) => {
 
 const CardComents = ({ Nota, Comentario, Imagem, Nome }) => {
     return (
-        <div className="w-[400px] h-[323px] bg-bgcard rounded-md px-[35px] pt-[58px] pb-[32px] flex flex-col justify-between max-[460px]:w-[300px] max-[460px]:h-[250px] max-[460px]:py-[20px] ">
+        <div className="w-[400px] h-[323px] bg-bgcard rounded-md px-[35px] pt-[58px] pb-[32px] flex flex-col justify-between max-[460px]:w-[300px] max-[460px]:h-[250px] max-[460px]:py-[20px] max-md:opacity-80">
             <div className="flex items-center gap-2">
                 <Estrelas nota={parseInt(Nota)} />
                 <span className="text-sm text-gray-500"></span>

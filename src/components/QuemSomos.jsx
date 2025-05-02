@@ -21,7 +21,7 @@ const QuemSomos = () => {
   // 2xl -> 1535px
   return (
     <section className="max-xl:h-[600px] relative flex my-[100px] justify-center items-center gap-[32px] max-sm:mb-[-200px]">
-      <div className="max-w-[566px] z-10 max-sm:px-[20px] max-sm:mt-[-300px]">
+      <div className="max-w-[566px] z-10 max-sm:px-[20px] max-sm:mt-[-300px] max-xl:text-center">
         <p className="text-letras2 text-[18px] mb-[14px]">
           Para os amantes de café
         </p>
@@ -30,7 +30,7 @@ const QuemSomos = () => {
           Com um modelo de negocio sólido e rentavel, a Tiamate se destaca entre
           as melhores oportunidades de franquia pelas 4 razões que seguem:
         </p>
-        <Slider className="w-[600px] max-sm:w-[320px] max-sm:m-auto" {...settings}>
+        <Slider className="w-[600px] max-sm:w-[320px] max-sm:m-auto max-xl:w-[300px] m-auto " {...settings}>
           <div className="!flex items-center gap-[18px] ">
             <div className="relative">
               <svg
@@ -44,7 +44,7 @@ const QuemSomos = () => {
                 <circle cx="41" cy="41" r="41" fill="#3B2416" />
               </svg>
               <svg
-                className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-55%]"
+                className=" absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-55%]"
                 width="42"
                 height="47"
                 viewBox="0 0 42 47"
@@ -57,7 +57,7 @@ const QuemSomos = () => {
                 />
               </svg>
             </div>
-            <p className="text-letras2 text-[16px] max-sm:text-[10px]">
+            <p className="text-letras2 text-[16px] max-xl:text-[10px]">
               Universidade corporativa que auxilia na capacitação <br className="max-sm:hidden"/>{" "}
               operacional e desenvolvimento de habilidades gerenciais
             </p>
