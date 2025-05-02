@@ -84,7 +84,7 @@ const Comentarios = () => {
                 <h2 className="text-primaria text-[50px] mb-[40px] max-md:text-[32px] max-[460px]:text-[24px]">Tudo sobre Tiamate Coffee</h2>
             </div>
             <div className="relative">
-                <div className="w-[505px] h-[420px]  z-0 absolute top-[-30px] left-[-340px] max-[460px]:w-[400px] max-[460px]:h-[350px] max-md:left-[-100px] max-sm:left-[-210px]">
+                <div className="w-[505px] h-[420px]  z-0 absolute top-[-30px] left-[-340px] max-[460px]:w-[400px] max-[460px]:h-[350px] max-md:left-[150px] max-sm:left-[-80px]">
                     <img className="w-full h-full object-cover object-right-top" src={img} alt="atendente" />
                 </div>
                 <Slider className="w-[1100px] carrosel z-10 cursor-pointer active:cursor-grabbing mr-[-340px] max-xl:w-[900px] max-sm:w-[550px] max-sm:ml-[-43%] max-[460px]:ml-[-20%] " {...settings}>
