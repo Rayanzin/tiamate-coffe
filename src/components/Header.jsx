@@ -70,7 +70,7 @@ const Header = () => {
       </nav>
       <div
         className={`z-20 absolute w-[300px] h-screen  bg-secundaria left-0 top-0 translate-x-[-100%] p-[10px] duration-300 ${
-          menu ? "menuon" : "menuff"
+          menu ? "menuon" : "menuoff"
         }`}
       >
         <ul className="list-none flex flex-col gap-[15px] *:bg-primaria *:w-full *:h-[50px] *:rounded-md *:flex *:justify-center *:items-center   *:*:w-full text-center *:*:py-[12px]">
