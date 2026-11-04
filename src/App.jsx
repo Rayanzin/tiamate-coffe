@@ -1,10 +1,10 @@
 import Patchs from "./routes";
 const App = () => {
-  return ( 
+  return (
     <>
-      <Patchs/>
+      <Patchs />
     </>
-   );
+  );
 }
- 
+
 export default App;
